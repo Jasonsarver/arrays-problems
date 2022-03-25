@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let nums = [1,2,2,4,5,4,7,8,7,3,6];
+
+//will start by passing a array as a paremeter in our function
+function removeDuplicateNums(array){
+// add empty array to place our values into
+  let uniqueNums = [];
+// create for loop with i being less than the length of the nums array
+  for(let i = 0; i < nums.length; i++){
+/* use ! to say that if the uniqueNums array doesnt include i
+ that we will then .push the value of i into the array. */    
+    if(!uniqueNums.includes(array[i])){
+       uniqueNums.push(array[i]);
+      };
+  };
+// stop the loop using return
+      return uniqueNums;
+};
+// call function and pass in your array 
+      console.log(removeDuplicateNums(nums));
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
